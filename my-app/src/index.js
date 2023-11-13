@@ -5,12 +5,13 @@ import reportWebVitals from './reportWebVitals';
 // import Clock from './chapter_04/Clock';
 // import Library from './chapter_03/Library';
 // import CommentList from './chapter_05/CommentList';
-import NotificationList from './chapter_06/NotificationList';
-export default NotificationList
+// import NotificationList from './chapter_06/NotificationList';
+import Accommodate from './chapter_07/Accommodate';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <NotificationList/>
+    <Accommodate/>
   </React.StrictMode>,
   document.getElementById('root')
 );
