@@ -1,18 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import Clock from './chapter_04/Clock';
 // import Library from './chapter_03/Library';
-import CommentList from './chapter_05/CommentList';
+// import CommentList from './chapter_05/CommentList';
+import NotificationList from './chapter_06/NotificationList';
+export default NotificationList
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(
-    <React.StrictMode>
-      <CommentList />
-    </React.StrictMode>
-  );
+ReactDOM.render(
+  <React.StrictMode>
+    <NotificationList/>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+//   root.render(
+//     <React.StrictMode>
+//       <NotificationList />
+//     </React.StrictMode>
+//   );
   
 
 
