@@ -10,13 +10,22 @@ import Accommodate from './chapter_07/Accommodate';
 import NotificationList from './chapter_06/NotificationList';
 import ConfirmButton from './chapter_08/ConfirmButton';
 import LangdingPage from './chapter_09/LandingPage';
+import AttendanceBook from './chapter_10/AttendanceBook';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <LangdingPage/>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <AttendanceBook/>
+  </React.StrictMode>
 );
+
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <AttendanceBook/>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 //   root.render(
 //     <React.StrictMode>
