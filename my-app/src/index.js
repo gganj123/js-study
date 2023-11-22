@@ -11,11 +11,13 @@ import NotificationList from './chapter_06/NotificationList';
 import ConfirmButton from './chapter_08/ConfirmButton';
 import LangdingPage from './chapter_09/LandingPage';
 import AttendanceBook from './chapter_10/AttendanceBook';
+import SignUp from './chapter_11/SignUp';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AttendanceBook/>
+    <SignUp/>
   </React.StrictMode>
 );
 
