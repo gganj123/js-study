@@ -3,7 +3,7 @@ const scaleNames = {
     f: "화씨",
 };
 
-function TemperatuerInput(props){
+function TemperatureInput(props){
     const handleChange = (event) => {
         props.onTemperatureChange(event.target.value);
     };
@@ -18,4 +18,4 @@ function TemperatuerInput(props){
     );
 }
 
-export default TemperatuerInput;
+export default TemperatureInput;

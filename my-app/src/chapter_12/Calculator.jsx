@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import TemperatuerInput from "./TemperatureInput";
+import TemperatureInput from "./TemperatureInput";
 
 function BoilingVerdict(props) {
     if (props.celsius >=100) {
@@ -8,11 +8,11 @@ function BoilingVerdict(props) {
     return <p>물이 끓지 않습니다!</p>;
 }
 
-function toCelsius(fahrenheit) {
-    return ((fahrenheit =32)*5)/9;
+function toCelsius(fahreheit) {
+    return ((fahreheit -32)*5)/9;
 }
 
-function toFahrenheit(celsius) {
+function toFahreheit(celsius) {
     return (celsius*9)/5 +32;
 }
 
@@ -43,16 +43,16 @@ function Calculator(props) {
     const celsius =
         scale === "f" ? tryConvert(temperature, toCelsius) : temperature;
     const fahreheit = 
-        scale === "c" ? tryConvert(temperature, toFahrenheit) : temperature;
+        scale === "c" ? tryConvert(temperature, toFahreheit) : temperature;
 
     return (
         <div>
-            <TemperatuerInput
+            <TemperatureInput
                 scale="c"
                 temperature={celsius}
                 onTemperatureChange={handleCelsiusChange}
             />
-            <TemperatuerInput
+            <TemperatureInput
                 scale="f"
                 temperature={fahreheit}
                 onTemperatureChange={handleFahrenheitChange}
