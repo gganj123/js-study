@@ -19,7 +19,7 @@ import DarkOrLight from './chapter_14/DarkOrLight';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DarkOrLight/>
+    <ProfileCard/>
   </React.StrictMode>
 );
 
