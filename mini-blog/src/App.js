@@ -10,7 +10,7 @@ import MainPage from "./component/page/MainPage";
 import PostWritePage from "./component/page/PostWritePage";
 import PostViewPage from "./component/page/PostViewPage";
 
-const MainTitleText= styled.p`
+const MainTitleText = styled.p`
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -19,7 +19,7 @@ const MainTitleText= styled.p`
 function App(props){
   return (
     <BrowserRouter>
-         <MainTitleText>두니마마</MainTitleText>
+         <MainTitleText>두니 마마</MainTitleText>
          <Routes>
             <Route index element= {<MainPage/>}/>
             <Route path="post-write" element={<PostWritePage/>}/>
@@ -28,4 +28,5 @@ function App(props){
     </BrowserRouter>
   );
 }
+
 export default App;
