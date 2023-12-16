@@ -37,12 +37,8 @@ ReactDOM.render(
 //       <NotificationList />
 //     </React.StrictMode>
 //   );
-  
-
 
 reportWebVitals();
-
-
 
 
 // ReactDOM.render(

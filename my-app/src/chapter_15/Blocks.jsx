@@ -48,7 +48,7 @@ function Blocks(props){
                         backgroundColor={blockItem.backgroundColor}
                     >
                             {blockItem.label}
-                    </Block>
+                </Block>
                 );
             })}
         </Wrapper>
