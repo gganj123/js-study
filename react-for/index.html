@@ -8,10 +8,10 @@
         let counter = 0;
         const button = document.getElementById("btn");
         const span = document.querySelector("span");
-        function handleClick(){
-            counter = counter +1;
-            span.innerText = counter;
+        function handleClick() {
+            counter = counter + 1;
+            span.innerText = `Total clicks: ${counter}`;
         }
-        button.addEventLitener("click", handleClick)
+        button.addEventLitener("click", handleClick);
      </script>
 </html>
