@@ -7,13 +7,21 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
         const root = document.getElementById("root");
+        let counter = 0;
+        function countUp(){
+
+
+        }
         function App(){
-            const data = React.useState();
-            console.log(data);
+            const [counter, setCounter] = React.useState(0);
+            const onClick = () =>{
+                setCounter(counter + 1);
+                                    };
+
             return(
                 <div>
                     <h3>Total clicks: {counter}</h3>
-                    <button>Click me</button>
+                    <button onClick={onClick}>Click me</button>
                 </div>
             );
         }
