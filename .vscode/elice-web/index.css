@@ -23,64 +23,64 @@
   .container {
     width: 960px;
     margin: 0 auto;
+  }
   
-    /*************
+  /*************
   *** Header ***
   *************/
-    #intro {
-      width: 100%;
-      height: 80px;
-    }
+  #intro {
+    width: 100%;
+    height: 80px;
+  }
   
-    #intro h1 {
-      float: left;
+  #intro h1 {
+    float: left;
   
-      width: 50%;
-      height: 80px;
-      background-color: #fbfbfb;
-    }
+    width: 50%;
+    height: 80px;
+    background-color: #fbfbfb;
+  }
   
-    #intro h1 a {
-      display: block;
+  #intro h1 a {
+    display: block;
   
-      font-size: 30px;
-      padding: 22px 0 0 30px;
-    }
+    font-size: 30px;
+    padding: 22px 0 0 30px;
+  }
   
-    #intro nav {
-      float: right;
+  #intro nav {
+    float: right;
   
-      width: 50%;
-      height: 80px;
-    }
+    width: 50%;
+    height: 80px;
+  }
   
-    #intro nav ul li {
-      float: left;
+  #intro nav ul li {
+    float: left;
   
-      width: 33.3333333%;
-      height: 80px;
+    width: 33.3333333%;
+    height: 80px;
   
-      text-align: center;
+    text-align: center;
   
-      line-height: 80px;
-    }
+    line-height: 80px;
+  }
   
-    #intro nav ul li.one {
-      background-color: #efeff6;
-    }
+  #intro nav ul li.one {
+    background-color: #efeff6;
+  }
   
-    #intro nav ul li.two {
-      background-color: #dcdcec;
-    }
+  #intro nav ul li.two {
+    background-color: #dcdcec;
+  }
   
-    #intro nav ul li.three {
-      background-color: #cbcae3;
-    }
+  #intro nav ul li.three {
+    background-color: #cbcae3;
+  }
   
-    #intro nav ul li a {
-      font-size: 20px;
-      font-weight: bold;
-    }
+  #intro nav ul li a {
+    font-size: 20px;
+    font-weight: bold;
   }
   
   /*************
@@ -212,22 +212,48 @@
     transform: scale(1.1);
   }
   
-  @media (min-width: 320px) and (max-width: 800px) {
+  @media (min-width: 320px) and (max-width: 1000px) {
     .container {
       width: 640px;
     }
+  
     #intro {
-      height: 160px;
-    }
-    #intro h1 {
       width: 100%;
     }
+  
+    #intro h1 {
+      width: 100%;
+      height: 160px;
+    }
+  
     #intro h1 a {
       text-align: center;
       padding: 22px 0 0 0;
     }
+  
     #intro nav {
       width: 100%;
+    }
+  
+    #main article {
+      width: 100%;
+      height: 420px;
+    }
+  
+    #footer {
+      padding: 30px 0;
+    }
+    #footer .copyright,
+    #footer .address {
+      width: 100%;
+    }
+    #footer .copyright p {
+      text-align: center;
+      padding: 0;
+    }
+    #footer .address p {
+      text-align: center;
+      padding: 20px;
     }
   }
   
