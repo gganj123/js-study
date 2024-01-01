@@ -1,10 +1,10 @@
-.container{
+/* .container{
     display:  grid;
     height: 600px;
     grid-template-rows: repeat(2,100px);
     grid-template-columns: repeat(2,100px);
 
-    /* start,end, center, baseline, space-between, space-around, space-evenly */
+    start,end, center, baseline, space-between, space-around, space-evenly
     justify-content:space-around ;
     align-content: space-around ; 
-}
+} */
