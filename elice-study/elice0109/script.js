@@ -1,6 +1,7 @@
 const addForm = document.querySelector('.add');
 const list = document.querySelector('.memos');
 const alertmsg = document.getElementById('alertmsg');
+const search = document.querySelector('.search input')
 
 
 const saveMemo = memotext => {
@@ -28,4 +29,29 @@ addForm.addEventListener('submit',e => {
         console.log('메모없음');
         alertmsg.classList.remove('hidden');
     }
+})
+
+list.addEventListener('click',e => {
+    //e.target.classList.contains('delete')
+    if(e.target.classList.contains('delete')){
+        e.target.parentElement.remove();
+    }
+})
+
+const filterMemo = memo =>{
+    Array.from(list.children)
+    .filter((memotext)=> !memotext.textContent.includes(memo))
+    .forEach((memotext) => memotext.classList.add('hidden')); 
+
+    Array.from(list.children)
+    .filter((memotext)=> memotext.textContent.includes(memo))
+    .forEach((memotext) => memotext.classList.remove('hidden')); 
+
+
+}
+
+search.addEventListener('keyup',e=> {
+    const searchText = search.value;
+    console.log(searchText);
+    filterMemo(searchText);
 })
